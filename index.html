@@ -9,7 +9,7 @@
 		<title>Cougatronix | Footless Pedals</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=1.1" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<meta property="og:image" content="images/bg.jpg">
@@ -21,6 +21,34 @@
 		<meta property="og:url" content="https://cougatronix.williamcougan.com">
 	</head>
 	<body class="is-preload">
+		<script>
+			if (window.location.search.includes('reset_banner=true')) {
+				localStorage.removeItem('constructionBannerDismissed');
+			}
+			if (localStorage.getItem('constructionBannerDismissed') === 'true') {
+				document.body.classList.add('banner-hidden');
+			}
+			function dismissBanner() {
+				var banner = document.getElementById('construction-banner');
+				if (banner) {
+					banner.classList.add('hidden');
+				}
+				document.body.classList.add('banner-hidden');
+				localStorage.setItem('constructionBannerDismissed', 'true');
+			}
+		</script>
+
+		<!-- Under Construction Banner -->
+		<div id="construction-banner">
+			<span class="pulse-dot"></span>
+			<span><strong>Notice:</strong> Cougatronix is under construction. Launching soon.</span>
+			<button class="banner-close" aria-label="Close banner" onclick="dismissBanner()">&times;</button>
+		</div>
+		<script>
+			if (localStorage.getItem('constructionBannerDismissed') === 'true') {
+				document.getElementById('construction-banner').classList.add('hidden');
+			}
+		</script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
