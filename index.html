@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css?v=1.1" />
+		<link rel="stylesheet" href="assets/css/gallery.css?v=1.2" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="favicon.png" />
 
@@ -79,6 +80,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#pedals">Footless Pedals</a></li>
 								<li><a href="#options">Custom Options</a></li>
+								<li><a href="#gallery">Product Gallery</a></li>
 								<li><a href="#circuit">The Circuit</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
@@ -159,6 +161,313 @@
 										</ul>
 									</li>
 								</ol>
+							</article>
+
+						<!-- Product Gallery -->
+							<article id="gallery">
+								<h2 class="major">Product Gallery</h2>
+								<p class="pg-intro">Recent Cougatronix builds, each with a Footless Guitar Pedal® built in. Tap a guitar for a closer look at its controls and LED colors, or sit back and watch the slideshow.</p>
+
+								<div class="pg-toolbar">
+									<div class="pg-filters" role="group" aria-label="Filter guitars">
+										<button type="button" class="pg-chip is-active" data-filter="all" aria-pressed="true" id="pg-filter-all">All <span class="pg-chip__count"></span></button>
+										<button type="button" class="pg-chip" data-filter="right" aria-pressed="false" id="pg-filter-right">Right-handed <span class="pg-chip__count"></span></button>
+										<button type="button" class="pg-chip" data-filter="left" aria-pressed="false" id="pg-filter-left">Left-handed <span class="pg-chip__count"></span></button>
+									</div>
+									<button type="button" class="pg-start" id="pg-start-slideshow">
+										<span class="pg-start__icon" aria-hidden="true"><i class="fas fa-play"></i></span>
+										Start Slideshow
+									</button>
+								</div>
+
+								<ul class="pg-grid" id="pg-grid">
+
+								<li class="pg-card" data-handed="right" style="--finish: linear-gradient(135deg, #f3d27a, #b8862b);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/lyxpro-gold.jpg" data-full="images/gallery/lyxpro-gold.jpg" alt="Gold LyxPro LP-style guitar with gold knobs and a built-in overdrive and distortion circuit" loading="lazy" decoding="async" width="640" height="1054" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">LyxPro · LP Style</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-lyxpro-gold">Gold Top</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #ffd23f;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #3d8bff;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>Internal battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>LyxPro, LP Style, Gold, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>Internal</dd>
+												<dt>LED colors</dt><dd>Yellow = Overdrive, Blue = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Gold</dd>
+												<dt>Kill switch</dt><dd>Gold</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: linear-gradient(135deg, #3a3f46, #0b0c0e);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/lyxpro-black-pushbutton.jpg" data-full="images/gallery/lyxpro-black-pushbutton.jpg" alt="Black LyxPro LP-style guitar with a silver pushbutton ignition switch and blue and yellow LEDs" loading="lazy" decoding="async" width="640" height="853" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">LyxPro · LP Style</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-lyxpro-black-pushbutton">Black · Silver Pushbutton</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #ffd23f;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #3d8bff;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>External battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>LyxPro, LP Style, Black</dd>
+												<dt>Ignition switch</dt><dd>Silver pushbutton, LED ring (none), “11” (optional), “True Bypass Surgery”</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>External</dd>
+												<dt>LED colors</dt><dd>Yellow = Overdrive, Blue = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Yes (same as sound effects LED)</dd>
+												<dt>Knobs</dt><dd>Silver</dd>
+												<dt>Kill switch</dt><dd>Silver</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: linear-gradient(135deg, #2b3a55, #0b0c0e);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/lyxpro-black.jpg" data-full="images/gallery/lyxpro-black.jpg" alt="Black LyxPro LP-style guitar with silver knobs and a blue LED-ring pushbutton ignition switch" loading="lazy" decoding="async" width="640" height="948" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">LyxPro · LP Style</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-lyxpro-black">Black · Blue Ring</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3ddc84;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #3d8bff;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>“11” pushbutton</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>LyxPro, LP Style, Black, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Black pushbutton, blue LED ring, “11” (optional), “True Bypass Surgery”</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain, Level</dd>
+												<dt>Battery</dt><dd>External</dd>
+												<dt>LED colors</dt><dd>Green = Overdrive, Blue = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Silver</dd>
+												<dt>Kill switch</dt><dd>Silver</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: radial-gradient(circle at 40% 40%, #f0b13a, #a3410f 55%, #1a0d07);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/lyxpro-sunburst.jpg" data-full="images/gallery/lyxpro-sunburst.jpg" alt="Right-handed sunburst LyxPro LP-style guitar with black and cream knobs and a lit “11” pushbutton" loading="lazy" decoding="async" width="640" height="970" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">LyxPro · LP Style</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-lyxpro-sunburst">Sunburst</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3ddc84;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #ff4d4d;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>Full EQ: Gain · Level · Tone</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>LyxPro, LP Style, Sunburst, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Black pushbutton, blue LED ring, “11” (optional), “True Bypass Surgery”</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain, Level, Tone</dd>
+												<dt>Battery</dt><dd>External</dd>
+												<dt>LED colors</dt><dd>Green = Overdrive, Red = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Black, Cream</dd>
+												<dt>Kill switch</dt><dd>Black</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="left" style="--finish: radial-gradient(circle at 40% 40%, #f0b13a, #a3410f 55%, #1a0d07);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/lyxpro-sunburst-lefty.jpg" data-full="images/gallery/lyxpro-sunburst-lefty.jpg" alt="Left-handed sunburst LyxPro LP-style guitar with black and orange knobs" loading="lazy" decoding="async" width="640" height="1120" />
+												<span class="pg-badge">Left-handed</span>
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">LyxPro · LP Style</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-lyxpro-sunburst-lefty">Sunburst Lefty</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3d8bff;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #ff4d4d;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Left-handed</li><li>Internal battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>LyxPro, LP Style, Sunburst, Left-handed</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>Internal</dd>
+												<dt>LED colors</dt><dd>Blue = Overdrive, Red = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Black, Orange</dd>
+												<dt>Kill switch</dt><dd>Black</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: linear-gradient(135deg, #e3c8ec, #9a7fb0);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/epiphone-lilac.jpg" data-full="images/gallery/epiphone-lilac.jpg" alt="Lilac Epiphone Les Paul with gold knobs and a built-in overdrive and distortion circuit" loading="lazy" decoding="async" width="640" height="859" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">Epiphone · Les Paul</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-epiphone-lilac">Lilac</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #ffd23f;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #3d8bff;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>Internal battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>Epiphone, Les Paul, Lilac</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>Internal</dd>
+												<dt>LED colors</dt><dd>Yellow = Overdrive, Blue = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Yes (same as sound effects LED)</dd>
+												<dt>Knobs</dt><dd>Gold</dd>
+												<dt>Kill switch</dt><dd>Gold</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: radial-gradient(circle at 40% 40%, #b3122a, #4a0612 60%, #120205);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/kgd-red-black.jpg" data-full="images/gallery/kgd-red-black.jpg" alt="Red and black KGD guitar with gold knobs and a green overdrive LED lit" loading="lazy" decoding="async" width="640" height="928" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">KGD</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-kgd-red-black">Red Black Burst</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3ddc84;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #ff4d4d;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>External battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>KGD, Red Black, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>External</dd>
+												<dt>LED colors</dt><dd>Green = Overdrive, Red = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Gold</dd>
+												<dt>Kill switch</dt><dd>Gold</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: linear-gradient(135deg, #b3122a 0%, #f2efe6 50%, #1f3a7a 100%);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/leo-jaymz-flag.jpg" data-full="images/gallery/leo-jaymz-flag.jpg" alt="Leo Jaymz guitar with a red, white and blue American flag finish and silver knobs" loading="lazy" decoding="async" width="640" height="982" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">Leo Jaymz · SC Series</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-leo-jaymz-flag">Stars &amp; Stripes</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3d8bff;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #ff4d4d;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>External battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>Leo Jaymz, SC Series, Red White Blue Flag, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>External</dd>
+												<dt>LED colors</dt><dd>Blue = Overdrive, Red = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Silver</dd>
+												<dt>Kill switch</dt><dd>Silver</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: radial-gradient(circle at 40% 40%, #3fbf3a, #0f4d1c 60%, #050b06);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/leo-jaymz-green.jpg" data-full="images/gallery/leo-jaymz-green.jpg" alt="Black and green flame-top Leo Jaymz guitar with black knobs" loading="lazy" decoding="async" width="640" height="1104" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">Leo Jaymz · SC Series</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-leo-jaymz-green">Green Burst</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3ddc84;"></span>Overdrive</li>
+													<li><span class="pg-led" style="--led: #ffd23f;"></span>Distortion</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>Internal battery</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>Leo Jaymz, SC Series, Black Green, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive and Distortion</dd>
+												<dt>Equalizer controls</dt><dd>Gain</dd>
+												<dt>Battery</dt><dd>Internal</dd>
+												<dt>LED colors</dt><dd>Green = Overdrive, Yellow = Distortion (silver toggle switch)</dd>
+												<dt>LED “on” indicator</dt><dd>Same as sound effects LED</dd>
+												<dt>Knobs</dt><dd>Black</dd>
+												<dt>Kill switch</dt><dd>Silver</dd>
+									</dl>
+								</li>
+
+								<li class="pg-card" data-handed="right" style="--finish: linear-gradient(135deg, #1fae4d, #07351a);">
+									<figure class="pg-card__media">
+										<img src="images/gallery/thumbs/ivy-green.jpg" data-full="images/gallery/ivy-green.jpg" alt="Green IVY ILS-300 LP-style guitar with gold knobs and a green power LED" loading="lazy" decoding="async" width="640" height="1179" />
+									</figure>
+									<div class="pg-card__body">
+										<p class="pg-card__brand">IVY · ILS-300</p>
+										<h3 class="pg-card__title"><button type="button" class="pg-card__open" id="pg-open-ivy-green">Emerald · The Simplest Configuration</button></h3>
+										<ul class="pg-leds" aria-label="LED colors">
+													<li><span class="pg-led" style="--led: #3ddc84;"></span>Power-on LED</li>
+										</ul>
+										<ul class="pg-tags"><li>Right-handed</li><li>Internal battery</li><li>Overdrive or Distortion</li></ul>
+									</div>
+									<dl class="pg-specs" hidden>
+												<dt>Guitar</dt><dd>IVY ILS-300, LP Style, Green, Right-handed</dd>
+												<dt>Ignition switch</dt><dd>Silver toggle, True Bypass</dd>
+												<dt>Sound effects</dt><dd>Overdrive OR Distortion</dd>
+												<dt>Equalizer controls</dt><dd>None</dd>
+												<dt>Battery</dt><dd>Internal</dd>
+												<dt>LED colors</dt><dd>None for sound effects</dd>
+												<dt>LED “on” indicator</dt><dd>About 12 colors to choose from</dd>
+												<dt>Knobs</dt><dd>Gold</dd>
+												<dt>Kill switch</dt><dd>None</dd>
+									</dl>
+								</li>
+
+								</ul>
+
+								<!-- Viewer / Slideshow (kept inside the article so clicks don't close it) -->
+								<dialog class="pg-viewer" id="pg-viewer" aria-label="Product viewer">
+									<div class="pg-viewer__progress" aria-hidden="true"><span></span></div>
+									<div class="pg-viewer__stage">
+										<div class="pg-viewer__frame" id="pg-frame">
+											<img class="pg-viewer__img is-current" alt="" />
+											<img class="pg-viewer__img" alt="" aria-hidden="true" />
+										</div>
+										<div class="pg-viewer__topbar">
+											<span class="pg-viewer__counter" id="pg-counter" aria-live="polite"></span>
+											<div class="pg-viewer__actions">
+												<button type="button" class="pg-icon-btn" id="pg-zoom" aria-label="Zoom in" title="Zoom (Z)"><i class="fas fa-search-plus" aria-hidden="true"></i></button>
+												<button type="button" class="pg-icon-btn pg-icon-btn--play" id="pg-play" aria-label="Play slideshow" title="Play / pause (Space)"><i class="fas fa-play" aria-hidden="true"></i></button>
+												<button type="button" class="pg-icon-btn" id="pg-fullscreen" aria-label="Enter full screen" title="Full screen (F)"><i class="fas fa-expand" aria-hidden="true"></i></button>
+												<button type="button" class="pg-icon-btn" id="pg-close" aria-label="Close viewer" title="Close (Esc)"><i class="fas fa-times" aria-hidden="true"></i></button>
+											</div>
+										</div>
+										<button type="button" class="pg-nav pg-nav--prev" id="pg-prev" aria-label="Previous guitar"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+										<button type="button" class="pg-nav pg-nav--next" id="pg-next" aria-label="Next guitar"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+										<div class="pg-viewer__caption" id="pg-caption"></div>
+										<div class="pg-viewer__thumbs" id="pg-thumbs" role="tablist" aria-label="Choose a guitar"></div>
+									</div>
+									<aside class="pg-viewer__panel" id="pg-panel" aria-label="Specifications"></aside>
+								</dialog>
 							</article>
 
 						<!-- The Circuit -->
@@ -460,6 +769,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js?v=1.2"></script>
 
 	</body>
 </html>
